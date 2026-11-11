@@ -1,0 +1,591 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: rgb(245, 245, 245);
+    color: rgb(51, 51, 51);
+}
+
+header {
+    background-color: rgb(36, 35, 35);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1 1 300px;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.detail-kendaraan {
+    display: block;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.gambar-kendaraan {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.gambar-kendaraan img {
+    width: 350px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.detail-kendaraan p {
+    margin: 10px 0;
+}
+
+.detail-kendaraan a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* =========================
+   FORM DATA DIRI
+========================= */
+
+/* FORM DATA DIRI */
+
+main {
+    padding: 20px;
+}
+
+.form-container {
+    width: 450px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.form-container h2 {
+    margin: 0 0 20px;
+    text-align: center;
+    color: rgb(36, 35, 35);
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.form-group input {
+    height: 36px;
+}
+
+.form-group textarea {
+    height: 70px;
+    resize: none;
+}
+
+.form-button {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.btn-simpan,
+.btn-kembali {
+    flex: 1;
+    padding: 9px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.btn-simpan {
+    border: none;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-kembali {
+    background-color: rgb(220, 220, 220);
+    color: rgb(36, 35, 35);
+    text-decoration: none;
+}
+
+
+/* =========================
+   HALAMAN DATA PELANGGAN
+========================= */
+
+.data-pelanggan {
+    padding: 30px;
+    min-height: 70vh;
+}
+
+.data-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Judul halaman */
+
+.judul-data {
+    margin-bottom: 25px;
+}
+
+.judul-data h2 {
+    margin: 0 0 8px;
+    font-size: 26px;
+    color: rgb(36, 35, 35);
+}
+
+.judul-data p {
+    margin: 0;
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+}
+
+/* Toolbar */
+
+.data-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.info-data {
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+}
+
+/* Tombol tambah */
+
+.tombol-tambah {
+    display: inline-block;
+    padding: 11px 18px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.tombol-tambah:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+/* Tabel pelanggan */
+
+.tabel-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 8px;
+}
+
+.tabel-pelanggan {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabel-pelanggan th {
+    padding: 15px 12px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.tabel-pelanggan td {
+    padding: 14px 12px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    color: rgb(65, 65, 65);
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.tabel-pelanggan tbody tr:nth-child(even) {
+    background-color: rgb(248, 248, 248);
+}
+
+.tabel-pelanggan tbody tr:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.tabel-pelanggan tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Tombol aksi */
+
+.aksi-data {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.aksi-data form {
+    margin: 0;
+}
+
+.tabel-pelanggan td a.btn-edit {
+    display: inline-block;
+    padding: 7px 11px;
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+    color: rgb(36, 35, 35);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.tabel-pelanggan td a.btn-edit:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+.tabel-pelanggan td button.btn-hapus {
+    padding: 7px 11px;
+    border: none;
+    background-color: rgb(255, 235, 235);
+    color: rgb(170, 45, 45);
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.tabel-pelanggan td button.btn-hapus:hover {
+    background-color: rgb(250, 215, 215);
+}
+
+/* Tampilan layar kecil */
+
+@media (max-width: 768px) {
+    .data-pelanggan {
+        padding: 15px;
+    }
+
+    .data-container {
+        padding: 18px;
+    }
+
+    .judul-data h2 {
+        font-size: 22px;
+    }
+
+    .data-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+/* Tombol Kelola Data Pelanggan */
+.menu-pelanggan {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu-pelanggan a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.menu-pelanggan a:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.menu-aksi {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tombol-home {
+    display: inline-block;
+    padding: 11px 18px;
+    background-color: rgb(220, 220, 220);
+    color: rgb(36, 35, 35);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.tombol-home:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+
+/* =========================
+   HALAMAN REGISTER DAN LOGIN
+========================= */
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+}
+
+.auth-header {
+    background-color: rgb(36, 35, 35);
+    color: white;
+    padding: 22px 15px;
+    text-align: center;
+}
+
+.auth-header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.auth-header p {
+    margin: 8px 0 0;
+    color: rgb(220, 220, 220);
+    font-size: 14px;
+}
+
+.auth-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 32px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.auth-title {
+    margin: 0 0 8px;
+    color: rgb(36, 35, 35);
+    text-align: center;
+    font-size: 25px;
+}
+
+.auth-description {
+    margin: 0 0 25px;
+    color: rgb(120, 120, 120);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.auth-group {
+    margin-bottom: 18px;
+}
+
+.auth-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.auth-group input {
+    width: 100%;
+    height: 42px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    background-color: white;
+    font-family: Arial;
+    font-size: 14px;
+    outline: none;
+}
+
+.auth-group input:focus {
+    border-color: rgb(80, 80, 80);
+    box-shadow: 0 0 0 2px rgba(36, 35, 35, 0.08);
+}
+
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    font-family: Arial;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.auth-button:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.auth-link {
+    margin: 22px 0 0;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: rgb(36, 35, 35);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+.auth-alert {
+    margin-bottom: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: rgb(255, 235, 235);
+    color: rgb(170, 45, 45);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.auth-success {
+    background-color: rgb(235, 245, 235);
+    color: rgb(40, 110, 55);
+}
+
+.auth-footer {
+    padding: 18px;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .auth-main {
+        padding: 25px 15px;
+    }
+
+    .auth-container {
+        padding: 25px 20px;
+    }
+
+    .auth-header h1 {
+        font-size: 21px;
+    }
+}
+
+/* Menu pengguna */
+.user-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.user-menu form {
+    margin: 0;
+}
+
+/* Form logout */
+.menu-pelanggan form {
+    margin: 0;
+}
+
+/* Tombol logout */
+.btn-logout {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #b02a37;
+}
